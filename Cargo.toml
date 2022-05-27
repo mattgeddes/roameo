@@ -1,0 +1,15 @@
+[package]
+name = "roameo"
+version = "0.1.0"
+edition = "2018"
+description = "Test current network state."
+
+[dependencies]
+libc = "0.2"
+nix = { version = "0.24", features = ["net"] }
+socket2 = "0.4"
+clap = "3.1"
+exitcode = "1.1"
+log = "0.4"
+env_logger = "0.9"
+network-interface = "0.1"

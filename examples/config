@@ -1,0 +1,13 @@
+# Sample ssh_config file demonstrating the use of roameo
+
+# If:
+#   - Connecting to hosts on corporate subnet (10.0.0.0/24), and
+#   - We're not on our corporate Wi-Fi (ESSID CorporateWifi),
+# Then
+#   - Use a jump host (jumphost.corp.net)
+#   - Enable agent forwarding
+#   - Enable SOCK5 proxy on local port 3128
+Match host 10.0.0.? !exec "roameo -e CorporateWiFi"
+    ProxyJump me@jumphost.corp.net:2222
+    ForwardAgent yes
+    DynamicForward 3128
