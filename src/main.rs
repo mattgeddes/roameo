@@ -6,9 +6,9 @@
 //! ## License
 //!
 //! GPL-3.0-only See [LICENSE][LICENSE] for specifics.
+use log::{error, info};
 use roameo::Roameo;
 use std::process;
-use log::{error,info};
 
 fn main() {
     env_logger::init();

@@ -1,8 +1,8 @@
 [package]
 name = "roameo"
-version = "0.1.1"
+version = "0.2.1"
 edition = "2018"
-description = "Test current network state."
+description = "Test state of current network interfaces against command line options."
 license = "GPL-3.0-only"
 
 [dependencies]

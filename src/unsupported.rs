@@ -3,8 +3,8 @@
  * functionality.
  */
 
-use std::io::{Error, ErrorKind};
 use crate::Roameo;
+use std::io::{Error, ErrorKind};
 
 impl Roameo {
     pub fn match_essid(&self) -> Result<(), Error> {

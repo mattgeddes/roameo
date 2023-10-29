@@ -44,11 +44,11 @@ The example then goes on to set a jump host, agent forwarding and SOCKS5 proxy t
 
 The initial version only supports matching against an ESSID or a specific source IP address. Functionality planned but not yet implemented includes:
 
-1. Matching against source subnet
-2. Matching against IPv6 addresses and subnets
-3. Matching any Wi-Fi connectivity, or any IPv6 (global) addressing
-4. Matching VPN and other tunnels
-5. Better support for non-Linux platforms
+1. Matching against IPv6 addresses and subnets
+2. Matching any Wi-Fi connectivity, or any IPv6 (global) addressing
+3. Matching VPN and other tunnels
+4. Better support for non-Linux platforms
+5. Refactor to be more Rusty
 
 Comments and pull requests welcome.
 
