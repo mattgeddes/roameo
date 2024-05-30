@@ -17,7 +17,7 @@ But if I'm at home trying to get to work, vice-versa, or anywhere else in the wo
 
 ```mermaid
 flowchart LR
-Laptop --> Jump Host --> Server
+Laptop --> F{Jump Host} --> Server
 ```
 
 With this project (Roameo), it's possible to have separate OpenSSH configurations based on either my source IP or subnet, or even the ESSID of the Wireless network I'm attached to currently.
