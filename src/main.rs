@@ -20,7 +20,7 @@ fn main() {
 
     // Do the thing
     if let Err(e) = r.find_match() {
-        error!("Error: {}", e);
+        info!("Error: {}", e);
         process::exit(exitcode::DATAERR);
     }
 
